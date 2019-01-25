@@ -1,6 +1,6 @@
 <template>
 <router-link class="tab" :to="info.path">
-    <div><img src="img/headerNav.png" :style="style"></div>
+    <div><img :src="info.url"></div>
     <span>{{info.title}}</span>
 </router-link>
 </template>
@@ -9,17 +9,6 @@
 export default {
     name: 'tab-item',
     props: ['info'],
-    computed:{
-        style(){
-            let offset = this.info.index*(-62);
-            if(this.$route.path !== this.info.path){
-                offset -= 30.5;
-            }
-            return {
-                transform: `translateY(${offset}px)`
-                }
-        }
-    }
 }
 </script>
 
@@ -45,7 +34,7 @@ export default {
 }
 }
 .router-link-exact-active{
-    color: #B4282D;
+    color: #69cf7a;
 } 
 
 </style>
