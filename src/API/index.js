@@ -1,5 +1,8 @@
-const PLANTS_URL = '/api/test';
+/*
+接口：请求社区主页数据
+mehtod: GET
+params: 无
+*/
+module.exports.COMMUNIT_URL = '/api/communit/userlist';
 
-export default {
-    PLANTS_URL,
-}
+module.exports.PLANTS_URL = '/api/test';
