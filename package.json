@@ -9,6 +9,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "better-scroll": "^1.13.4",
+    "lib-flexible": "^0.3.2",
     "mint-ui": "^2.2.13",
     "mockjs": "^1.0.1-beta3",
     "vant": "^1.5.2",
@@ -21,12 +22,18 @@
     "@vue/cli-service": "^3.3.0",
     "babel-plugin-import": "^1.11.0",
     "node-sass": "^4.9.0",
+    "postcss-pxtorem": "^4.0.1",
     "sass-loader": "^7.0.1",
     "vue-template-compiler": "^2.5.21"
   },
   "postcss": {
     "plugins": {
-      "autoprefixer": {}
+      "autoprefixer": {},
+      "postcss-pxtorem":{
+        "rootValue":75,
+        "propList":["*"],
+        "selectorBlackList":[".border",".sub-header",".tabs"]
+      }
     }
   },
   "browserslist": [

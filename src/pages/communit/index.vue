@@ -95,14 +95,14 @@ export default {
     .commul{
         box-sizing: border-box;
         background: #fff;
-        margin-top: 10px;
+        margin-top: 20px;
         .commitem{
             .wrapper{
-                padding: 5px 12px;  
+                padding: 10px 24px;  
                 .commheader{
                     display: flex;
                     align-items: center;
-                    margin-bottom: 5px;
+                    margin-bottom: 10px;
                     img{
                         width: 10%;
                         margin-right: 10px;
@@ -116,21 +116,22 @@ export default {
                     display: flex;
                     justify-content: space-between;
                     img{
-                        height: 150px;
+                        height: 300px;
                         display: inline-block;
                     }
                 }
                 .info{
                     display: block;
-                    margin: 5px 0;
-                    line-height: 24px;
+                    margin: 10px 0;
+                    line-height: 48px;
+                    font-size: 30px;
                 }
                 .iconwrapper{
                     overflow: hidden;
                     .icon{
                         float: right;
                         .van-icon{
-                            font-size: 18px;
+                            font-size: 36px;
                         }
                         .van-icon:nth-of-type(2){
                             margin: 0 10px;
@@ -148,14 +149,16 @@ export default {
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
+            padding-top: 20px;
+            padding-bottom: 10px;
             li{
                 width: 33.33%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding: 10px 0;
+                padding: 20px 0 20px;
                 img{
-                    height: 25px;
+                    height: 50px;
                     display: block;
                     margin: 8px 0;
                 }

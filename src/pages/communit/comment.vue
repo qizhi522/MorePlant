@@ -34,7 +34,7 @@ export default {
 
 <style lang="scss" scoped>
 .van-popup{
-    min-height: 300px;
+    min-height: 600px;
     box-shadow: 0 -2px 3px -1px lightgray;
     border-radius: 10px 10px 0 0;
     p{
@@ -46,10 +46,10 @@ export default {
     }
     .inp{
         position: relative;
-        top: 268px;
+        top:535px;
         input{
             width: 100%; 
-            line-height: 30px;
+            line-height: 60px;
             padding-left: 20px;
             border: 0;
             background-image: linear-gradient(to top, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.2) 98%, #FFFFFF 100%); 

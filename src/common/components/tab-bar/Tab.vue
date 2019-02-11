@@ -19,13 +19,13 @@ export default {
     list-style: none;
     background-color: #fff;
     div{
-        width: 26px;
-        height: 26px;
+        width: 40px;
+        height: 40px;
         overflow: hidden;
         margin: 0 auto;
-        padding: 4px 0;
+        padding: 12px 0;
         img{
-            width: 100%
+            width: 100%;
         }
     }
     span{
