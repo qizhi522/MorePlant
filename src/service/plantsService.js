@@ -23,3 +23,21 @@ export function getplantList(){
         )
     })
 } 
+// 获取商城数据
+export function getMallFleshPlantList(){
+    return new Promise((resolve,reject)=>{
+        FetchGet(API.MALL_URL)
+        .then(data=>{
+            let newData=data.list.map(item=>{
+                    return{
+                        id:item.id,
+                        url:item.url,
+                        info:item.info,
+                        rebate:item.rebate,
+                        price:item.price
+                    }
+            })
+            resolve(newData);
+        })
+    })
+}
