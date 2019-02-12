@@ -120,6 +120,9 @@ export default {
                     font-size: 20px;
                 }
             }
+            .txt{
+                font-size: 14px;
+            }
         }
         .seamain{
             height: 623px;
@@ -133,6 +136,9 @@ export default {
                 img{
                     width: 98px;
                 }
+            }
+            span{
+                font-size: 14px;
             }
         }
     }

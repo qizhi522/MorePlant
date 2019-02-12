@@ -3,20 +3,20 @@
         <Header/>
         <scroller :top="44" :bottom="1" ref="scroller">
             <ul class="commul">
-                <li class="commitem border-bottom" v-for="item in list" :key="item.id" >
+                <li class="commitem border-bottom" v-for="(item,index) in list" :key="item.id" >
                     <div class="wrapper">
                         <div class="commheader">
                             <img :src="item.Headportrait">
                             <span class="username">{{item.name}}</span>
                         </div>
                         <div class="commimg">
-                            <img v-for="imgitem in item.url" :key="imgitem" :src="imgitem">
+                            <img v-for="imgitem in item.url" :key="imgitem" :src="imgitem"  @click="showImgAction(index)">
                         </div>
                         <p class="info">{{item.info}}</p>
                         <div class="iconwrapper">
                             <div class="icon">
                                 <van-icon name="like-o" />
-                                <van-icon name="chat-o" @click="comAction"/>
+                                <van-icon name="chat-o" @click="asAvtion"/>
                                 <van-icon name="share" @click="shareAction"/>
                             </div>
                         </div>
@@ -54,9 +54,11 @@
 
 <script>
 import Vue from 'vue'
+import {mapState} from 'vuex'
 import {getcommunitList} from '../../service/plantsService.js'
 import Header from '../../common/components/header';
 import Comment from './comment';
+import { ImagePreview } from 'vant';
 import { Popup } from 'vant';
 
 Vue.use(Popup);
@@ -73,6 +75,11 @@ export default {
         Header,
         Comment
     },
+    computed: {
+        ...mapState({
+            comshow: state=>state.home.comshow,
+        })
+    },
     created(){
         getcommunitList().then(data => {
             this.list = data;
@@ -84,6 +91,12 @@ export default {
         },
         comAction(){
             this.commentshow = !this.commentshow;
+        },
+        showImgAction(index){
+            ImagePreview(this.list[index].url);
+        },
+        asAvtion(){
+            this.$store.commit('home/switch_dialog');
         }
     }
 }
@@ -108,7 +121,7 @@ export default {
                         margin-right: 10px;
                     }
                     .username{
-                        font-size: 14px;
+                        font-size: 28px;
                         color: #666666;
                     }
                 }

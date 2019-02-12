@@ -30,7 +30,7 @@ export default {
     }
     span{
     display: block;
-    font-size: 12px;
+    font-size: 24px;
 }
 }
 .router-link-exact-active{

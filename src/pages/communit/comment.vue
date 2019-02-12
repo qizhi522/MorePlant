@@ -1,6 +1,6 @@
 <template>
     <div class="comment">
-        <van-popup v-model="comshow" position="bottom" :overlay="true">
+        <van-popup v-model="$store.state.home.comshow" position="bottom" :overlay="true" >
             <ul>
                 <p v-if="isShow">暂无评论，来抢沙发</p>
                 <li v-for="item in comlist" :key="item.id">{{item.info}}</li>
@@ -15,19 +15,28 @@
 
 <script>
 import Vue from 'vue';
+import {mapState} from 'vuex'
 import { Popup } from 'vant';
 
 Vue.use(Popup);
 export default {
-    props: ['comshow'],
+    // props: ['comshow'],
     data(){
         return {
+            zshow: false,
             isShow: true,
             comlist:[],
         }
     },
-    created(){
- 
+     computed: {
+        ...mapState({
+            comshow: state=>state.home.comshow,
+        })
+    },
+    methods:{
+        // clickOverlay(){
+        //     this.$parent.comAction();            
+        // }
     }
 }
 </script>
@@ -50,6 +59,7 @@ export default {
         input{
             width: 100%; 
             line-height: 60px;
+            box-sizing: border-box;
             padding-left: 20px;
             border: 0;
             background-image: linear-gradient(to top, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.2) 98%, #FFFFFF 100%); 
