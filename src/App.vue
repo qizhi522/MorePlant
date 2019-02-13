@@ -20,10 +20,10 @@ export default {
   data(){
     return{
       tabList:[
-        {title: '植物圈', path: '/',url: 'img/plants.png'},
-        {title: '社区', path: '/communit',url: 'img/communit.png'},
-        {title: '商城', path: '/mall',url: 'img/mall.png'},
-        {title: '我的', path: '/mine',url: 'img/mine.png'},
+        {title: '植物圈', path: '/',url: '/img/plants.png'},
+        {title: '社区', path: '/communit',url: '/img/communit.png'},
+        {title: '商城', path: '/mall',url: '/img/mall.png'},
+        {title: '我的', path: '/mine',url: '/img/mine.png'},
       ]
     }
   }

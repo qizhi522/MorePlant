@@ -5,7 +5,7 @@
             <input type="text" placeholder="多肉 绿色植物"/>
         </div>
         <ul class="nav">
-            <router-link to='/mall/freshFlowers'><li @click="btnAction1" ref="fresh" :class="{active:true}">新鲜花卉</li></router-link>
+            <router-link to='/mall'><li @click="btnAction1" ref="fresh" :class="{active:true}">新鲜花卉</li></router-link>
             <router-link to='/mall/outsidePlant'><li @click="btnAction2" ref="outside" :class="{active:false}">户外植物</li></router-link>
             <router-link to='/mall/flowerPot'><li @click="btnAction3" ref="pot" :class="{active:false}">花卉盆栽</li></router-link>
         </ul>

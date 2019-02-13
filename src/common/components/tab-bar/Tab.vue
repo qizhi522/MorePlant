@@ -1,5 +1,5 @@
 <template>
-<router-link class="tab" :to="info.path">
+<router-link :exact="info.path == '/' ? true : false" class="tab" :to="info.path">
     <div><img :src="info.url"></div>
     <span>{{info.title}}</span>
 </router-link>
@@ -33,7 +33,7 @@ export default {
     font-size: 24px;
 }
 }
-.router-link-exact-active{
+.router-link-active{
     color: #69cf7a;
 } 
 

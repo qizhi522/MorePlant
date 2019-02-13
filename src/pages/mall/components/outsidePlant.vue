@@ -1,15 +1,17 @@
 <template>
     <div class="freshFlowers">
-        <ul>
-            <li v-for='item in list' :key="item.id">
-                <img :src='item.url'/>
-                <div class="right">
-                    <p class="info">{{item.info}}</p>
-                    <p class="rebate">{{item.rebate}}</p>
-                    <span><i>￥</i>{{item.price}}</span>
-                </div>
-            </li>
-        </ul>
+        <scroller :top='90' :bottom='1' ref='scroller'>
+            <ul>
+                <li v-for='item in list' :key="item.id">
+                    <img :src='item.url'/>
+                    <div class="right">
+                        <p class="info">{{item.info}}</p>
+                        <p class="rebate">{{item.rebate}}</p>
+                        <span><i>￥</i>{{item.price}}</span>
+                    </div>
+                </li>
+            </ul>
+        </scroller>
     </div>
 </template>
 
@@ -31,8 +33,9 @@ export default {
 
 <style lang="scss" scoped>
 .freshFlowers{
-    ul{
         background: #f4f4f4;
+        height: 85%;
+    ul{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;

@@ -1,10 +1,10 @@
 const route =  {
     path: '/mall',
     component: ()=>import('../pages/mall'),
-    redirect:'/mall/freshFlowers',
     children:[
         {
-            path:'freshFlowers',
+            path:'/',
+            
             component:()=>import('../pages/mall/components/freshFlowers.vue')
         },
         {
