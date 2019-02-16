@@ -5,6 +5,7 @@ import store from './store'
 import common from './common'
 import 'lib-flexible/flexible'
 
+
 Vue.use(common);
 Vue.config.productionTip = false
 
