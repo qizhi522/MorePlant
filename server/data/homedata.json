@@ -1,0 +1,90 @@
+{
+    "homebannerlist": [
+        {
+            "id":111111,
+            "bannerurl": "/img/banner1.jpg"
+        },
+        {
+            "id":111112,
+            "bannerurl": "/img/banner2.jpg"
+        },
+        {
+            "id":111113,
+            "bannerurl": "/img/banner3.jpg"
+        }
+    ],
+    "recommendlist":[
+        {
+            "id":22222,
+            "name": "编者推荐",
+            "comment": "8422",
+            "share": "1.4w",
+            "connent": "Natalia参加西班牙花艺节；比利时最大花艺秀即将开展。",
+            "recommendimg": "img/Recommend_03.jpg"
+        },
+        {
+            "id":22223,
+            "name": "编者推荐",
+            "comment": "9999",
+            "share": "2.1w",
+            "connent": "有心插花，什么都可以是花器； 用心生活处处都会是美。",
+            "recommendimg": "img/Recommend_07.jpg"
+        },
+        {
+            "id":22224,
+            "name": "编者推荐",
+            "comment": "4678",
+            "share": "9988",
+            "connent": "颜值不够，植物来凑提升家居bigger的植物了解下呀~",
+            "recommendimg": "img/Recommend_09.jpg"
+        }
+    ],
+    "userlist":[
+        {
+            "id": 33333,
+            "type":1,
+            "title": "26位花艺师，共赴一场不负青春的花艺之约",
+            "imgurl": "img/Recommend_12.jpg",
+            "name": "鹿石花艺Sikastone",
+            "comment": "4678",
+            "share": "9988"
+        },
+        {
+            "id": 33334,
+            "type":2,
+            "title": "以花养气质，以花养...",
+            "imgurl": "img/Recommend_14.jpg",
+            "name": "",
+            "comment": "4678",
+            "share": "9988"
+        },
+        {
+            "id": 33335,
+            "type":2,
+            "title": "10种热门秋季花材",
+            "imgurl": "img/Recommend_16.jpg",
+            "name": "",
+            "comment": "4678",
+            "share": "9988"
+        },
+        {
+            "id": 33336,
+            "type":2,
+            "title": "5种花植唤醒你的少...",
+            "imgurl": "img/Recommend_19.jpg",
+            "name": "",
+            "comment": "4678",
+            "share": "9988"
+        },
+        {
+            "id": 33337,
+            "type":2,
+            "title": "50种鲜花切花花语...",
+            "imgurl": "img/Recommend_20.jpg",
+            "name": "",
+            "comment": "4678",
+            "share": "9988"
+        }
+        
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "list":[
+        {
+            "id":1001,
+            "url":"/img/mallImg01.jpg",
+            "info": "色香水百合花百合花...",
+            "rebate":"满100减10",
+            "price":99
+        },
+        {
+            "id":1002,
+            "url":"/img/mallImg02.jpg",
+            "info": "郁金香菊花桂花玫瑰花...",
+            "rebate":"满100减10",
+            "price":99
+        },
+        {
+            "id":1003,
+            "url":"/img/mallImg03.jpg",
+            "info": "绽放的花",
+            "rebate":"满100减10",
+            "price":99
+        },
+        {
+            "id":1004,
+            "url":"/img/mallImg04.jpg",
+            "info": "新上花束新鲜飘香",
+            "rebate":"满100减10",
+            "price":99
+        },
+        {
+            "id":1005,
+            "url":"/img/mallImg05.jpg",
+            "info": "色香水百合花百合花...",
+            "rebate":"满100减10",
+            "price":99
+        },
+        {
+            "id":1006,
+            "url":"/img/mallImg06.jpg",
+            "info": "色香水百合花百合花...",
+            "rebate":"满100减10",
+            "price":99
+        }
+    ]
+ }
+            

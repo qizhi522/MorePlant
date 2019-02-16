@@ -1,0 +1,19 @@
+{
+  "name": "yanxuan-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jsdom": "^13.1.0",
+    "mockjs": "^1.0.1-beta3",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "server": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
